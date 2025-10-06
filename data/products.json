@@ -1,0 +1,27 @@
+[
+  {
+    "category": "Fruits",
+    "products": [
+      { "name": "Apple", "price": 50, "image": "img/1.webp" },
+      { "name": "Banana", "price": 20, "image": "img/2.webp" },
+      { "name": "Mango", "price": 60, "image": "img/3.webp" }
+    ]
+  },
+  {
+    "category": "Vegetables",
+    "products": [
+      { "name": "Carrot", "price": 30, "image": "img/1.webp" },
+      { "name": "Tomato", "price": 25, "image": "img/2.webp" },
+      { "name": "Onion", "price": 40, "image": "img/3.webp" }
+    ]
+  },
+  {
+    "category": "Dairy",
+    "products": [
+      { "name": "Milk", "price": 45, "image": "img/1.webp" },
+      { "name": "Cheese", "price": 120, "image": "img/2.webp" },
+      { "name": "Yogurt", "price": 35, "image": "img/3.webp" },
+      { "name": "Butter", "price": 80, "image": "img/1.webp" }
+    ]
+  }
+]

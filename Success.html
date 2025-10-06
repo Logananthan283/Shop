@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <title>Success</title>
+  <style>
+    /* ================================
+       ROOT VARIABLES
+    ================================= */
+    :root {
+      --primary-color: #3f51b5;
+      --secondary-color: #ff4081;
+      --success-color: #4caf50;
+      --bg-color: #f4f6f8;
+      --text-color: #333;
+      --header-footer-bg: #3f51b5;
+      --header-footer-text: #fff;
+      --container-bg: #fff;
+      --border-radius: 12px;
+      --shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    /* ================================
+       GLOBAL RESET
+    ================================= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ================================
+       HEADER
+    ================================= */
+    header {
+      background: var(--header-footer-bg);
+      color: var(--header-footer-text);
+      text-align: center;
+      padding: 2em 1em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    /* ================================
+       MAIN CONTAINER
+    ================================= */
+    .container {
+      flex: 1 0 auto;
+      max-width: 600px;
+      margin: 3em auto;
+      background: var(--container-bg);
+      padding: 2em;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    .container p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .home-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: var(--primary-color);
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background: var(--secondary-color);
+    }
+
+    /* ================================
+       FOOTER
+    ================================= */
+    footer {
+      background: var(--header-footer-bg);
+      color: var(--header-footer-text);
+      text-align: center;
+      padding: 1.5em 1em;
+      flex-shrink: 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      font-size: 0.95rem;
+    }
+
+    /* ================================
+       RESPONSIVE
+    ================================= */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        margin: 2em auto;
+        padding: 1.5em;
+      }
+
+      .home-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thank You!</h1>
+  </header>
+
+  <div class="container">
+    <p>Your product list and customer information were submitted successfully.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Shop. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Redirect to home page after 3 seconds
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 1000);
+  </script>
+</body>
+</html>

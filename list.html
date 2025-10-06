@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Summary & Customer Details</title>
+  <link rel="stylesheet" href="list.css">
+</head>
+<body>
+  <header>
+    <h1>Order Summary</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- ================= TABLE CONTAINER ================= -->
+    <section class="section-box table-container">
+      <h2>Selected Products</h2>
+      <table id="orderTable" aria-label="Order Summary Table">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+            <th>Total (₹)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- ================= CUSTOMER FORM CONTAINER ================= -->
+    <section class="section-box form-container">
+      <h2>Customer Details</h2>
+      <form id="customerForm" aria-label="Customer Information Form">
+        <label for="custName">Name:</label>
+        <input type="text" id="custName" name="custName" required placeholder="Enter your full name">
+
+        <label for="custWhatsapp">WhatsApp Number:</label>
+        <input type="text" id="custWhatsapp" name="custWhatsapp" required placeholder="Enter WhatsApp number">
+
+        <label for="custAddress">Address:</label>
+        <textarea id="custAddress" name="custAddress" required placeholder="Enter address"></textarea>
+
+        <label for="custPincode">Pincode:</label>
+        <input type="text" id="custPincode" name="custPincode" required placeholder="Enter pincode">
+
+        <label for="custDistrict">District:</label>
+        <input type="text" id="custDistrict" name="custDistrict" required placeholder="Enter district">
+      </form>
+    </section>
+
+    <!-- ================= GENERATE PDF BUTTON ================= -->
+    <section class="section-box button-container">
+      <button type="submit" form="customerForm" class="btn generate-btn">Generate PDF</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 My Business Store. All Rights Reserved.</p>
+  </footer>
+
+  <img id="logo" src="img/logo.png" style="display:none;" alt="Shop Logo">
+
+  <script src="js/html2canvas.min.js"></script>
+  <script src="js/jspdf.umd.min.js"></script>
+  <script src="js/listscript.js"></script>
+</body>
+</html>
